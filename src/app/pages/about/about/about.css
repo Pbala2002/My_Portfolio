@@ -1,0 +1,42 @@
+.about-section {
+  color: #fff;
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: bold;
+  border-left: 5px solid #e91e63;
+  padding-left: 10px;
+  margin-bottom: 15px;
+}
+
+.about-description {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: #ccc;
+}
+
+.education-title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #ccc;
+  border-bottom: 2px solid #e91e63;
+  display: inline-block;
+  padding-bottom: 4px;
+}
+
+.education-list .edu-item {
+  margin-bottom: 20px;
+}
+
+.edu-degree {
+  font-size: 16px;
+  font-weight: bold;
+  color: #e91e63;
+  margin-bottom: 5px;
+}

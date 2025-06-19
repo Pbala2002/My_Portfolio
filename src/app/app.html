@@ -1,9 +1,17 @@
-<nav class="navbar">
-  <a routerLink="">Home</a>
-  <a routerLink="about">About</a>
-  <a routerLink="skills">Skills</a>
-  <a routerLink="projects">Projects</a>
-  <a routerLink="contact">Contact</a>
+
+
+<nav class="navbar"  #menuWrapper>
+  <div class="logo"><span class="highlight">B</span>alaKrishnan P</div>
+
+  <div class="menu-icon" (click)="toggleMenu()">&#9776;</div>
+
+  <div class="nav-links" [class.active]="isMenuOpen">
+    <a href="#home" (click)="closeMenu()">Home</a>
+    <a href="#about" (click)="closeMenu()">About</a>
+    <a href="#skills" (click)="closeMenu()">Skills</a>
+    <a href="#projects" (click)="closeMenu()">Projects</a>
+    <a href="#contact" (click)="closeMenu()">Contact</a>
+  </div>
 </nav>
 
 <router-outlet></router-outlet>

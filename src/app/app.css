@@ -1,11 +1,85 @@
 .navbar {
   display: flex;
-  gap: 20px;
-  padding: 10px;
-  background-color: #282c34;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #880E4F;
+  padding: 15px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
-.navbar a {
+
+.logo {
+  font-size: 1.5rem;
   color: white;
-  text-decoration: none;
   font-weight: bold;
 }
+
+.logo .highlight {
+  color: #ff0066;
+}
+
+.menu-icon {
+  color: white;
+  font-size: 1.8rem;
+  display: none;
+  cursor: pointer;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* @media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #880E4F;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links a {
+    margin: 10px 0;
+  }
+} */
+
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0; /* ⬅️ remove the 20px gap */
+    background-color: #880E4F;
+    padding: 10px;
+    border-radius: 10px 0 0 10px; /* optional: rounded only on left */
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}
+
